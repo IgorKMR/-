@@ -1,0 +1,47 @@
+ *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 0;
+        outline: 0;
+    }
+   
+$wrapper-size:960px;
+$myborder: 1px solid black;
+$ofset:10px;
+
+.column-common{
+   
+    height: 200px;
+    outline: $myborder;
+    display: inline-block;
+    vertical-align: top; 
+    margin: $ofset/2 ;
+}
+
+.wrapper{
+    width: $wrapper-size;
+    margin: 0 auto;
+}
+
+.column-one{
+    @extend.column-common;// подмешиваем параметры
+    width: $wrapper-size - $ofset;
+    background: red;
+}
+
+.column-big{
+    @extend.column-common;
+    width: ($wrapper-size/2) - $ofset ;
+  
+}
+
+
+.column-middle{
+    @extend.column-common;
+    width: ($wrapper-size/3) - $ofset;
+}
+.column-small{
+    @extend.column-common;
+    width: ($wrapper-size/4) - $ofset;
+}
