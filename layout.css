@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  outline: 0;
+}
+
+.column-common, .column-one, .column-big, .column-middle, .column-small {
+  height: 200px;
+  outline: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.column-one {
+  width: 950px;
+  background: red;
+}
+
+.column-big {
+  width: 470px;
+}
+
+.column-middle {
+  width: 310px;
+}
+
+.column-small {
+  width: 230px;
+}
+
+/*# sourceMappingURL=layout.css.map */
